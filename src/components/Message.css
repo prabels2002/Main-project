@@ -1,0 +1,11 @@
+/* Message.css */
+.message-card {
+    width: 80%;
+    margin: 0 0 5px;
+    float: right;
+    right: 0px;
+}
+
+.message-timestamp {
+    float: right;
+}
