@@ -139,11 +139,7 @@ export function App( props ) {
     }) : null;
   
     // Displays each card
-    const chats = friends ? friends.map( ( friend ) => {
-     return (
-         <ChatCard publicKey={ friend.publicKey } name={ friend.name } getMessages={ ( key ) => getMessage( key ) } />
-     );
-    }) : null;
+    
 
     return (
         <Container style={{ padding:"100px", backgroundColor: "", paddingLeft : "" }}>
