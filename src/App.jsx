@@ -6,7 +6,7 @@ import { ethers } from "ethers";
 import { abi } from "./abi";
 
 // Add the contract address inside the quotes
-const CONTRACT_ADDRESS = "0xF02C9B63dDaA173AA8a7794B559200A3f0418E92"; 
+const CONTRACT_ADDRESS = "0xF02C9B63dDaA173AA8a7794B559200A3f0418E876"; 
 
 export function App( props ) {  
     const [friends, setFriends] = useState(null);
@@ -115,7 +115,7 @@ export function App( props ) {
             try {
                 const data = await myContract.getMyFriendList();
                 data.forEach( ( item ) => {
-                    friendList.push({ "publicKey": item[0], "name": item[1] });
+                    friendList.push({ "publicKey": item[1], "name": item[0] });
                 })
             } catch(err) {
                 friendList = null;  
