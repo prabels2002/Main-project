@@ -29,7 +29,7 @@ export function AddNewChat( props ){
                         Close
                     </Button>
                     <Button variant="primary" onClick={ () => {
-                        props.addHandler( document.getElementById('addName').value, document.getElementById('addPublicKey').value );
+                        props.addHandler( document.getElementById('addName').value, document.getElementById('addPublicKey').value, document.getElementById('addPrivateKey').value );
                         handleClose();
                     }}>
                         Add Friend
