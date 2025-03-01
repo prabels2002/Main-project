@@ -10,7 +10,7 @@ export function ChatCard( props ){
               <Card.Body>
                   <Card.Title> { props.name } </Card.Title>
                   <Card.Title> { props.name } </Card.Title>
-                  <Card.Subtitle> { props.publicKey.length > 20 ? props.publicKey.substring(0, 20) + " ..." : props.publicKey } </Card.Subtitle>
+                  <Card.Subtitle> { props.publicKey.length > 20 ? props.publicKey.substring(0, 40) + " ..." : <props className="publicKey1"></props> } </Card.Subtitle>
               </Card.Body>
             </Card>
         </Row> 
