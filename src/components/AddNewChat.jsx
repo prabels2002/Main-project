@@ -4,8 +4,7 @@ import { Button, Modal, Form } from "react-bootstrap";
 
 // This Modal help Add a new friend
 export function AddNewChat( props ){
-    const [show, setShow] = useState( false );
-    const handleClose = () => setShow( false );
+    
     const handleShow = () => setShow( true );
     return (
         <div className="AddNewChat" style={{ position:"absolute", bottom:"0px", padding:"10px 45px 0 45px", margin:"0 95px 0 0", width:"97%" }}>
